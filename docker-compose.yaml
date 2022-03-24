@@ -1,0 +1,9 @@
+version: '2.4'
+
+services:
+  app:
+    image: nexus3_local:3.37.3
+    build:
+      context: .
+    ports:
+      - 1234:8081
