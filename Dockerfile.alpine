@@ -1,0 +1,7 @@
+FROM alpine:3.15.0 as downloader
+
+RUN apk update
+
+COPY ./repositories /etc/apk/repositories
+ 
+
